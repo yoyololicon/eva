@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 from sklearn.svm import SVC
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 from sklearn.model_selection import train_test_split, KFold
-from sklearn.utils import shuffle
 from sklearn.utils.class_weight import compute_class_weight, compute_sample_weight
 
 labels = pd.read_csv('annotations.csv')
@@ -60,11 +59,7 @@ feature_sets = {'mfcc': ['mfcc'],
                 'mfcc/bandwidth/rmse': ['mfcc', 'spectral_bandwidth', 'rmse'],
                 'all_features': list(features.columns.levels[0])}
 
-#features, y, sy = shuffle(features, y, sy)
-#print(features)
-
 clf = SVC(kernel='linear')
-kf = KFold(n_splits=3, shuffle=True)
 
 print("With original labels:")
 X_train, X_test, y_train, y_test, sy_train, sy_test = train_test_split(features, y, sy, test_size=0.3)

@@ -1,12 +1,12 @@
 # EVA: The Extreme Vocals Archive Dataset
 
 This is the final project I did when I was studying the MIR course in NTHU. 
-I decide to do make a dataset full of screaming vocals samples, because this kind of vocals is less concerned in the MIR field.
+I decided to do make a dataset full of screaming vocals samples, because this kind of vocals is less concerned in the MIR field.
 The making of this dataset may be a starting point for future research.
 
 ## Raw audio
 
-I pick up 16 songs which I think has screaming vocals in it as listed below  from [The 'Mixing Secrets' Free Multitrack Download Library](http://www.cambridge-mt.com/ms-mtk.htm), 
+I pick up 16 songs as listed below  from [The 'Mixing Secrets' Free Multitrack Download Library](http://www.cambridge-mt.com/ms-mtk.htm), 
 and used audacity to slice vocal tracks into small clips, ended up with 565 of samples.
 
 ```
@@ -49,8 +49,23 @@ Most of the code are borrowed from [FMA](https://github.com/mdeff/fma/blob/maste
 2. [analysis](analysis.py): show the melspectrogram of some samples. Require raw audio files.
 3. [baseline](baseline_svm.py): baseline svm model for vocal techniques recognition.
 
+## Melspectrogram of some samples
+
+![](images/compare1.png)
+![](images/compare2.png)
+![](images/compare3.png)
+![](images/compare4.png)
+![](images/compare5.png)
+![](images/compare6.png)
+
+## Samples distribution after dimension reduction using LDA
+
+![](images/LDA1.png)
+![](images/LDA2.png)
+
 ## Environment
 
 * ubuntu 16.04 LTS
 * python3.5.2 (using Pycharm 2018.1.4)
-* extra modules: numpy, matplotlib, librosa, sklearn
+
+I also wrote a [report](report.pdf) in chinese about the making process.

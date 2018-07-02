@@ -1,0 +1,28 @@
+Vocal Fry : 40 of samples.
+False Chord : 65 of samples.
+Vocal Fry Dominated : 135 of samples.
+False Chord Dominated : 302 of samples.
+Others(non-screaming) : 23 of samples.
+Features shape: (565, 245)
+
+With original labels:
+mfcc: 0.74970436068
+mfcc/rolloff: 0.719401330377
+mfcc/contrast: 0.718218773097
+mfcc/flatness: 0.729249815225
+mfcc/centroid: 0.77655210643
+mfcc/bandwidth: 0.787675535846
+mfcc/bandwidth/zcr: 0.789948263119
+mfcc/bandwidth/rmse: 0.789948263119
+all_features: 0.699371766445
+
+With simplified labels:
+mfcc: 0.758241758242
+mfcc/rolloff: 0.814255189255
+mfcc/contrast: 0.751831501832
+mfcc/flatness: 0.745421245421
+mfcc/centroid: 0.810821123321
+mfcc/bandwidth: 0.859966422466
+mfcc/bandwidth/zcr: 0.859966422466
+mfcc/bandwidth/rmse: 0.859966422466
+all_features: 0.736950549451

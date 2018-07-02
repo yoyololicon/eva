@@ -63,15 +63,15 @@ clf = SVC(kernel='linear')
 
 print("With original labels:")
 X_train, X_test, y_train, y_test, sy_train, sy_test = train_test_split(features, y, sy, test_size=0.3)
-for fset_name, fset in sorted(feature_sets.items(), key = lambda x : len(x[0])):
+for fset_name, fset in sorted(feature_sets.items(), key=lambda x: len(x[0])):
     clf.fit(X_train.loc[:, fset], y_train)
     weights = compute_sample_weight('balanced', y_test)
     acc = clf.score(X_test.loc[:, fset], y_test, sample_weight=weights)
-    print(fset_name+":", acc)
+    print(fset_name + ":", acc)
 
 print("With simplified labels:")
-for fset_name, fset in sorted(feature_sets.items(), key = lambda x : len(x[0])):
+for fset_name, fset in sorted(feature_sets.items(), key=lambda x: len(x[0])):
     clf.fit(X_train.loc[:, fset], sy_train)
     weights = compute_sample_weight('balanced', sy_test)
     acc = clf.score(X_test.loc[:, fset], sy_test, sample_weight=weights)
-    print(fset_name+":", acc)
+    print(fset_name + ":", acc)

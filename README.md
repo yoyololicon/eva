@@ -28,7 +28,7 @@ Titanium: 'Haunted Age'
 Wall Of Death: 'Femme'
 ```
 
-I named each clips using abbreviation, so the first clips from the track `43_Vox18.wav` in _The Apprehended - Still Flyin_ 
+I named each clips using initials, so the first clips from the track `43_Vox18.wav` in _The Apprehended - Still Flyin_ 
 is named as `TA_SF_43_Vox18_01.wav`, etc. I can't provide the raw audio, but you can use the files in [mark_time](mark_time) 
 which contain the start time and end time of each clips, to manually recreate them.
 

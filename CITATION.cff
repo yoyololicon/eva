@@ -1,0 +1,14 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 'EVA: The Extreme Vocals Archive Dataset'
+message: >-
+  If you use this dataset, please cite it using the
+  metadata from this file.
+type: dataset
+authors:
+  - given-names: Chin-Yun
+    family-names: Yu
+    email: ya70201@gmail.com
+url: "https://github.com/yoyololicon/eva"
